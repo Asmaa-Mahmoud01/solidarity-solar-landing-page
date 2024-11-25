@@ -3,10 +3,10 @@
     --main-color: #0B9586;
     --secondary-color: #3CAB90;
     --special-color: #FFBB1C;
-    --image-color: #3CAB9026;
     --item-background:#0000000F;
     --cards-background: #3CAB900F;
-    --section-background: #FFBB1C0D;;
+    --section-background: #FFBB1C0D;
+    --text-color:#475467;
 }
 /* end variables */
 /* start global rules */
@@ -299,7 +299,7 @@ header .main-header .toggle:hover ul::after{
     justify-content: center;
     align-items: flex-start;
     padding: 60px 0;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .friend-cont .friend-text{
@@ -317,6 +317,7 @@ header .main-header .toggle:hover ul::after{
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 50px;
+    color: var(--text-color);
 }
 .friend-cont div:first-of-type ol{
     list-style-type: none;
@@ -339,10 +340,12 @@ header .main-header .toggle:hover ul::after{
 }
 .friend-cont .friend-images{
     max-width: 519px;
+    padding: 10px;
 }
 .friend-cont div:last-of-type .base-img{
     width: 469px;
-    height: 552px;
+    max-height: 552px;
+    max-width: 100%;
     border-radius: 12px 0px 0px 0px;
     position: relative;
 }
@@ -350,14 +353,14 @@ header .main-header .toggle:hover ul::after{
     position: relative;
 }
 .friend-cont div:last-of-type .front-img{
-    width: 266px;
-    height: 208px;
+    max-width: 250px;
+    max-height: 550px;
     background-color: var(--special-color);
     padding: 24px 30px 24px 30px;
     border-radius: 12px;
     position: absolute;
     bottom: 4%;
-    left: -10%;
+    left: -4%;
 }
 .friend-cont div:last-of-type .front-img p{
     font-size: 16px;
@@ -407,3 +410,67 @@ header .main-header .toggle:hover ul::after{
     background-color: var(--special-color);
 }
 /* end power */
+/* solar kits */
+.solar-kits{
+    padding: 70px 0;
+}
+.solar-kits .solar-title{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.solar-kits .solar-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    max-width: 930px;
+    margin: 0 auto 30px;
+    color: var(--text-color);
+}
+.solar-kits .kits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+}
+.kits .kit .kit-cont{
+    padding: 0 15px;
+}
+.kits .kit img{
+    max-width: 100%;
+}
+.kits .kit .kit-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 15px 0 20px;
+}
+.kits .kit .kit-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-color);
+    max-height: 72px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.kits .kit .kit-cont a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--secondary-color);
+}
+.kits .kit .kit-cont  span{
+    display: inline-block;
+    margin-left: 5px;
+}
+/* solar kits */
