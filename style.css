@@ -299,7 +299,11 @@ header .main-header .toggle:hover ul::after{
     justify-content: center;
     align-items: flex-start;
     padding: 60px 0;
-    gap: 60px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.friend-cont .friend-text{
+    max-width: 594px;
 }
 .friend-cont div:first-of-type .friend-title{
     font-size: 42px;
@@ -333,6 +337,9 @@ header .main-header .toggle:hover ul::after{
     color: #84BD3A;
     letter-spacing: 3px;
 }
+.friend-cont .friend-images{
+    max-width: 519px;
+}
 .friend-cont div:last-of-type .base-img{
     width: 469px;
     height: 552px;
@@ -359,3 +366,44 @@ header .main-header .toggle:hover ul::after{
     margin-top: 20px;
 }
 /* end friendliest */
+/* start power */
+.power{
+    background-image: url(images/section2.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 130px 0;
+}
+.power-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 678px;
+}
+.power .power-title{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+    color: white;
+}
+.power .power-p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 33px;
+    color: white;
+}
+.power-cont button{
+    padding: 12px 34px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.08em;
+    border-radius: 108px;
+    border: none;
+    background-color: var(--special-color);
+}
+/* end power */
