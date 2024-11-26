@@ -75,11 +75,14 @@ header .main-header ul{
 header .main-header ul li{
     list-style-type: none;
     text-decoration: none;
-    color: white;
     padding: 8px 28px;
     font-size: 18px;
     font-weight: 400;
     border-radius: 5px;
+}
+header .main-header ul li a{
+    text-decoration: none;
+    color: white;
 }
 .active{
     background-color: var(--item-background);
@@ -410,7 +413,7 @@ header .main-header .toggle:hover ul::after{
     background-color: var(--special-color);
 }
 /* end power */
-/* solar kits */
+/* start solar kits */
 .solar-kits{
     padding: 70px 0;
 }
@@ -458,6 +461,7 @@ header .main-header .toggle:hover ul::after{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     text-overflow: ellipsis;
     overflow: hidden;
     margin-bottom: 20px;
@@ -473,4 +477,41 @@ header .main-header .toggle:hover ul::after{
     display: inline-block;
     margin-left: 5px;
 }
-/* solar kits */
+/* end solar kits */
+/* start repairs */
+.repairs{
+    background-image: url(images/section4.png);
+    background-position: top;
+    background-size: cover;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.repairs .repair-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.repair-main .rep{
+    text-align: center;
+    max-width: 829px;
+    background-color: #00000091;
+    border-radius: 12px;
+    filter: blur(24);
+    color: white;
+    padding: 44px 24px;
+}
+.rep .rep-title{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+.rep .rep-text{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+/* end repairs */
